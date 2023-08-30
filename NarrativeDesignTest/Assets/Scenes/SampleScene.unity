@@ -33904,7 +33904,6 @@ GameObject:
   - component: {fileID: 1952695997}
   - component: {fileID: 1952695990}
   - component: {fileID: 1952695992}
-  - component: {fileID: 1952695996}
   - component: {fileID: 1952695995}
   - component: {fileID: 1952695991}
   - component: {fileID: 1952695994}
@@ -33918,6 +33917,9 @@ GameObject:
   - component: {fileID: 1952696000}
   - component: {fileID: 1952695998}
   - component: {fileID: 1952696006}
+  - component: {fileID: 1952696008}
+  - component: {fileID: 1952696009}
+  - component: {fileID: 1952696007}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -33950,10 +33952,10 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1952696005}
-  selectedCommands:
-  - {fileID: 1952696006}
-  variables: []
+  - {fileID: 1952695992}
+  selectedCommands: []
+  variables:
+  - {fileID: 1952696007}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -34014,7 +34016,7 @@ MonoBehaviour:
   itemId: 0
   blockName: Start
   description: 
-  eventHandler: {fileID: 1952695996}
+  eventHandler: {fileID: 1952696008}
   commandList:
   - {fileID: 1952695995}
   - {fileID: 1952695991}
@@ -34098,21 +34100,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &1952695996
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952695989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1952695992}
-  suppressBlockAutoSelect: 0
-  waitForFrames: 1
 --- !u!4 &1952695997
 Transform:
   m_ObjectHideFlags: 0
@@ -34121,8 +34108,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952695989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 208.83, y: 30.56, z: 0.33}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 208.83, y: 32.2, z: -0.25}
+  m_LocalScale: {x: 3.1771328, y: 3.1771328, z: 3.1771328}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -34351,7 +34338,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &1952696006
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -34369,6 +34356,51 @@ MonoBehaviour:
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
   fadeTweenType: 4
+--- !u!114 &1952696007
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952695989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecbb345616367420f90d15042808304e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: Var
+  value: {fileID: 2140055378}
+--- !u!114 &1952696008
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952695989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98f5f89242e80d42865cdf1912beda3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1952695992}
+  suppressBlockAutoSelect: 0
+  tagFilter: []
+  FireOn: 1
+  colliderVar: {fileID: 0}
+--- !u!65 &1952696009
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952695989}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1954179631
 GameObject:
   m_ObjectHideFlags: 0
