@@ -33931,6 +33931,8 @@ GameObject:
   - component: {fileID: 1952696015}
   - component: {fileID: 1952696014}
   - component: {fileID: 1952696022}
+  - component: {fileID: 1952696024}
+  - component: {fileID: 1952696023}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -33951,11 +33953,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 22.964289, y: 30.925415}
+  scrollPos: {x: -21.662842, y: -0.1334753}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.9100001
+  zoom: 0.97
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -33963,8 +33965,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1952696022}
-  selectedCommands: []
+  - {fileID: 1952696020}
+  selectedCommands:
+  - {fileID: 1952696023}
   variables:
   - {fileID: 1952696007}
   description: 
@@ -34022,7 +34025,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 492.27472
     y: 75.4945
-    width: 77.47253
+    width: 77.83505
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -34150,7 +34153,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 601.66974
     y: 122.8791
-    width: 99.45055
+    width: 102.57732
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -34289,7 +34292,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 391.07697
     y: 124.09886
-    width: 68.68132
+    width: 69.58763
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 1
@@ -34528,7 +34531,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: 'Constella:
 
-    "Long ago, my brother and I were created as me'
+    Long ago, my brother and I were created as equals to
+    balance reality and fate...'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -34640,7 +34644,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 699.0137
     y: 180.06363
-    width: 115.93406
+    width: 119.07217
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -34668,7 +34672,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 534.1785
     y: 177.86577
-    width: 82.967026
+    width: 85.051544
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -34679,6 +34683,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 1952696016}
   - {fileID: 1952696015}
+  - {fileID: 1952696024}
+  - {fileID: 1952696023}
   suppressAllAutoSelections: 0
 --- !u!114 &1952696021
 MonoBehaviour:
@@ -34721,7 +34727,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 606.7057
     y: 261.3822
-    width: 109.34065
+    width: 112.8866
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -34731,6 +34737,64 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList: []
   suppressAllAutoSelections: 0
+--- !u!114 &1952696023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952695989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 28
+  indentLevel: 0
+  storyText: 'Constella:
+
+    Without the PRISM, we are powerless.'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1952696024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952695989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 27
+  indentLevel: 0
+  storyText: 'Constella:
+
+    To do this, we shared an ancient artifact... the PRISM...'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1954179631
 GameObject:
   m_ObjectHideFlags: 0
