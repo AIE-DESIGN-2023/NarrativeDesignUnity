@@ -33,10 +33,6 @@ public class PlayerController : MonoBehaviour
         //Get the camera component from the child object
         playerCamera = GetComponentInChildren<Camera>();
 
-
-
-        //Lock mouse cursor
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
 
